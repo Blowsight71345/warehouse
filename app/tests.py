@@ -59,6 +59,7 @@ def test_update_product(client):
     assert response.status_code == 200
     assert response.json()["name"] == "Updated Product"
 
+
 #
 def test_delete_product(client):
     response = client.post("/products/", json={"name": "Delete Product", "price": 20.0, "stock": 5})

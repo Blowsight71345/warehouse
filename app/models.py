@@ -4,6 +4,7 @@ import datetime
 from database import Base
 from enum import Enum
 
+
 class Product(Base):
     __tablename__ = "products"
 
@@ -13,10 +14,12 @@ class Product(Base):
     price = Column(Float, nullable=False)
     stock = Column(Integer, default=1)
 
+
 class OrderStatus(str, Enum):
     processing = "в процессе"
     shipped = "отправлен"
     delivered = "доставлен"
+
 
 class Order(Base):
     __tablename__ = "orders"
