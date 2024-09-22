@@ -1,4 +1,6 @@
 POSTGRES_DB=postgres # имя создаваемой БД
 TEST_POSTGRES_DB=postgres # имя создаваемой БД для тестов
-POSTGRES_USER=postgres # пароль для БД
-POSTGRES_PASSWORD=postgres # пользователь для БД
+POSTGRES_USER=postgres # пользователь БД
+POSTGRES_PASSWORD=postgres # пароль для БД
+POSTGRES_HOST=localhost      # хост БД
+POSTGRES_PORT=5432           # порт БД
