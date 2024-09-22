@@ -11,12 +11,6 @@
 
 ***!!!Сервер БД при этом нужно поднять самостоятельно и указать в файле .env параметры подключения!!!***
 
-Для запуска локально на unix выполнить команду:
-
-```bash
-make local-app
-```
-
 Для запуска под windows выполнить следующие команды:
 
 ```bash
@@ -26,16 +20,13 @@ uvicorn main:app --reload
 
 Сервис будет доступен по адресу http://localhost:8000
 
-#### В docker контейнере
-
-Для запуска в docker на unix выполнить команду:
+#### Сбилдить контейнер
 
 ```bash
-make docker-app
+docker compose up --bild
 ```
-
-Для остановки docker контейнера:
+#### Запуск через docker
 
 ```bash
-make drop-docker-app
+docker run warehouse-web
 ```

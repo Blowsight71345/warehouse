@@ -9,7 +9,7 @@ from environs import Env
 env = Env()
 env.read_env()
 #для работы с postgres
-POSTGRES_DB = env("POSTGRES_DB")
+POSTGRES_DB = env("TEST_POSTGRES_DB")
 POSTGRES_USER = env("POSTGRES_USER")
 POSTGRES_PASSWORD = env("POSTGRES_PASSWORD")
 POSTGRES_HOST = env("POSTGRES_HOST")
