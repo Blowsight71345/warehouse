@@ -1,0 +1,4 @@
+POSTGRES_DB=postgres # имя создаваемой БД
+TEST_POSTGRES_DB=postgres # имя создаваемой БД для тестов
+POSTGRES_USER=postgres # пароль для БД
+POSTGRES_PASSWORD=postgres # пользователь для БД
